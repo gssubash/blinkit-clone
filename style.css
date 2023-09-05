@@ -58,9 +58,169 @@
 }
 
 .my-list > img {
-  padding-inline: 10px;
+  padding-inline: 8px;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
+  display: none;
+}
+
+.my-card {
+  width: 179px;
+  margin-inline: 10px;
+}
+
+.my-card-time {
+  width: fit-content;
+  height: 10px;
+  text-transform: uppercase;
+  font-weight: 700px;
+  font-size: 9px;
+  color: rgb(54, 54, 54);
+
+  border-radius: 4px;
+  padding: 0px 4px;
+  background-color: rgb(248, 248, 248);
+}
+
+.my-card-title {
+  color: rgb(31, 31, 31);
+  font-weight: 600px;
+  font-size: 13px;
+}
+
+.my-card-weight{
+  font-size: 12px;
+  color: #666;
+}
+
+.my-card-price{
+  color: rgb(31, 31, 31);
+    font-weight: 600px;
+    font-size: 12px;
+    line-height: 11px;
+}
+
+.mrp{
+  font-size: 12px;
+  color: #666;
+}
+
+.category-section {
+  width: 85%;
+  margin: auto;
+  /* overflow-x: scroll; */
+}
+
+.category-section-row{
+  overflow-x: auto;
+}
+
+/*footer section*/
+footer{
+  width: 85%;
+  margin: auto;
+}
+
+.row-3{
+  font-size: 14px;
+  color: rgb(102, 102, 102);
+  font-family: OKRA-REGULAR;
+  line-height: 18px;
+  padding: 10px;
+  text-align: justify;
+}
+
+.row-2{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.row-2>p{
+  font-size: 12px;
+  color: rgb(102, 102, 102);
+  font-family: OKRA-REGULAR;
+  text-align: justify;
+  width: 30%;
+}
+
+.my-download>p{
+  font-family: Okra;
+  color: #666;
+  font-weight: 600;
+  font-size: 14px;
+  margin: 16px;
+}
+
+.my-download>img{
+  margin: 10px;
+}
+
+.my-social{
+  display: flex;
+  justify-content: space-between;
+}
+
+.my-social-btn{
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  font-size: 30px;
+  margin-inline: 10px;
+}
+
+.row-1{
+  display: flex;
+  justify-content: space-between;
+}
+
+.useful-links{
+  flex: 2;
+}
+
+.categories-links{
+  flex: 3;
+}
+
+table{
+  width: 100%;
+}
+td{
+  color: #666;
+  padding: 3px 10px;
+}
+
+@media screen and (max-width:768px) {
+  nav,.row-1,.row-2{
+    flex-direction: column;
+  }
+
+  .vertical-line,.hero>img,.hero{
     display: none;
+  }
+
+  .nav-btn,.row-2>p,.search-div{
+    width: 90%;
+  }
+
+  .row-1>div{
+    margin-top: 20px;
+  }
+
+  .row-1>div>h5{
+    text-align: center;
+  }
+
+  td{
+    text-align: center;
+  }
+
+  .my-social{
+    margin-top: 10px;
+  }
+
 }
