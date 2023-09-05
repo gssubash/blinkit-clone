@@ -1,6 +1,10 @@
 /* .location {
 } */
 
+html{
+  scroll-behavior: smooth;
+}
+
 .location > h5 {
   color: rgb(0, 0, 0);
   font-weight: 800;
@@ -194,6 +198,21 @@ td{
   padding: 3px 10px;
 }
 
+.gototop{
+  width: 50px; height: 50px;
+  position: fixed;
+  right: 32px;
+  bottom: 16px;
+  font-size: 30px;
+
+  text-align: center;
+  color:white;
+  border-radius: 10%;
+  text-decoration: none;
+  background-color:  #ec7029;
+}
+
+/* Media Query Section */
 @media screen and (max-width:768px) {
   nav,.row-1,.row-2{
     flex-direction: column;
