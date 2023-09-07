@@ -70,8 +70,14 @@ html{
 }
 
 .my-card {
-  width: 179px;
+  width: 160px;
   margin-inline: 10px;
+}
+
+.my-card>img{
+  width: 120px;
+  height: 120px;
+
 }
 
 .my-card-time {
@@ -218,6 +224,10 @@ td{
     flex-direction: column;
   }
 
+  nav{
+    margin-top: 8px;
+  }
+
   .vertical-line,.hero>img,.hero{
     display: none;
   }
@@ -240,6 +250,10 @@ td{
 
   .my-social{
     margin-top: 10px;
+  }
+
+  nav>button{
+    margin-block: 10px;
   }
 
 }
